@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fizika Yakuniy Nazorat</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+  <!-- BOSHLASH -->
+  <div id="start" class="card">
+    <h1>Fizika Yakuniy Nazorat</h1>
+    <p>469 ta savol</p>
+    <p>Test sonini tanlang</p>
+
+    <div class="buttons">
+      <button onclick="startTest(20)">20 ta</button>
+      <button onclick="startTest(50)">50 ta</button>
+      <button onclick="startTest(100)">100 ta</button>
+    </div>
+    <p>created by Bobur</p>
+  </div>
+
+  <!-- TEST -->
+  <div id="quiz" class="card hidden">
+    <div id="counter"></div>
+    <h2 id="question"></h2>
+    <div id="options"></div>
+  </div>
+
+  <!-- NATIJA -->
+  <div id="result" class="card hidden">
+    <h2>Natija</h2>
+    <p id="score"></p>
+    <button onclick="location.reload()">Qayta boshlash</button>
+  </div>
+
+</div>
+
+<script src="questions.js"></script>
+<script src="engine.js"></script>
+</body>
+</html>
