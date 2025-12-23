@@ -98,9 +98,10 @@ function check(clickedBtn, selectedIdx, correctIdx) {
   
   // Javobni ko'rib olishi uchun biroz pauza (masalan, 1 soniya)
   if (index < selected.length) {
-    setTimeout(showQuestion, 1000);
+    setTimeout(showQuestion, 3000);
   } else {
-    setTimeout(showResult, 1000);
+    setTimeout(showResult, 3000);
   }
 }
+
 
